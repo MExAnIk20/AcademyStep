@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Settings</title>
+	<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+	<link rel="stylesheet" type="text/css" href="CSS/media.css">
+</head>
+<body>
+<header>
+	<ul>
+		<li><a href="#"></a></li>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Homework</a></li>
+		<li><a href="#" class="active-link">Settings</a></li>
+	</ul>
+	<img src="img/av_64.png" alt="av_64">
+</header>
+<h3>Settings</h3>
+<div class="titles">
+		<div><p>AVATAR</p></div>
+		<div><p>STUDENTS INFO</p></div>
+		<div><p>CHANGE PASSWORD</p></div>
+</div>
+<div class="container">
+	<div class="colum1">
+		<form action="#" method="post">
+			<img src="img/av_256.png" alt="alt">
+			<label><input id="Button1" type="file">Choose photo</label>
+		</form>
+	</div>
+	<div class="colum2">
+		<form action="#" method="post">
+			<input type="text" placeholder="First name" required maxlength="16" pattern="[A-Za-zА-Яа-яЁё]{2,16}">
+			<input type="text" placeholder="Last name" required maxlength="16" pattern="[A-Za-zА-Яа-яЁё]{2,16}">
+			<input type="email" placeholder="Email">
+			<input type="tel" placeholder="Phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+			<input type="text" placeholder="Adress" required>
+			<input type="text" placeholder="FB link">
+			<button>Save changes</button>
+		</form>
+	</div>
+	<div class="colum3">
+		<form action="#" method="post">
+			<input type="text" placeholder="Old password" maxlength="20">
+			<input type="password" placeholder="New password" maxlength="20" pattern="(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}">
+			<input type="new-password" placeholder="Repeat password" maxlength="20" pattern="(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}"><!-- (?=.*[0-9]) - строка содержит хотя бы одно число; (?=.*[!@#$%^&*]) - строка содержит хотя бы один спецсимвол; (?=.*[a-z]) - строка содержит хотя бы одну латинскую букву в нижнем регистре; (?=.*[A-Z]) - строка содержит хотя бы одну латинскую букву в верхнем регистре; [0-9a-zA-Z!@#$%^&*]{6,} - строка состоит не менее, чем из 6 вышеупомянутых символов.-->
+			<button>Change password</button>
+		</form>
+	</div>
+</div>
+</body>
+</html>
